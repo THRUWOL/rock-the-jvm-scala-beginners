@@ -1,5 +1,8 @@
 package HorstmanTasks.First
 import scala.math._
+import scala.util.Random
+
+import scala.BigInt.probablePrime
 
 object FirstTasks1 extends App{
   // Задание 2
@@ -16,5 +19,11 @@ object FirstTasks1 extends App{
 
   println(BigInt(2) pow 1024)
 
+  // Задание 8
+
+  val randomNumber: BigInt = probablePrime(100, Random)
+  val convertString: String = randomNumber.toString(36)
+
+  println(convertString)
 
 }
