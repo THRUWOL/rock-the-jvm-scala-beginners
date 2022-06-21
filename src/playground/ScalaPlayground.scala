@@ -1,17 +1,18 @@
 package playground
 
-import scala.collection.mutable.ListBuffer
+
 
 
 object ScalaPlayground extends App{
 
-  // Пустые строки
-  val testList = List()
-  val testList2 = Nil
+  val aString: String = "Hello word"
 
-  println(testList.getClass)
-  println(testList2.getClass)
-  println(testList.equals(testList2))
+  val link = "https://stepik.org"
+
+  println(s"The link is ${link.toUpperCase}")
+
+
+
 
 
 
