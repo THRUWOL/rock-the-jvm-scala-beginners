@@ -1,4 +1,4 @@
-package lectures.part1basics
+package engCourse.lectures.part1basics
 
 object ValuesVariablesTypes extends App {
   // Val`s нельзя изменять (аля константа)

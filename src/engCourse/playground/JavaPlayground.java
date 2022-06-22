@@ -1,4 +1,4 @@
-package playground;
+package engCourse.playground;
 
 public class JavaPlayground {
     public static void main(String[] args) {
