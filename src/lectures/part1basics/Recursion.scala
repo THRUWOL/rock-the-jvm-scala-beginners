@@ -57,11 +57,9 @@ object Recursion extends App{
   println(repeatWord(counterOfNumber(100, 1, 5).toString,counterOfNumber(100, 1, 5).toString.length.toInt) + " is the result")
 
   def transform(aString: String)= {
-    val aList = aString.replaceAll("\\s", "").split(" ").toList.reverse
-    println(aList.mkString(" "))
+    val aList = aString.split(" ").toList.reverse.mkString(" ").replaceAll("\\s+", " ")
+    println(aList)
   }
-  transform("I like             Scala")
+  transform("I like  Scala")
 
 }
-
-
