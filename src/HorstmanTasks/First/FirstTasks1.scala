@@ -1,4 +1,4 @@
-package engCourse.HorstmanTasks.First
+package HorstmanTasks.First
 import scala.math._
 import scala.util.Random
 

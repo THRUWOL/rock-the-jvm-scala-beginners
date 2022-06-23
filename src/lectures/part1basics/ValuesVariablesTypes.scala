@@ -1,4 +1,4 @@
-package engCourse.lectures.part1basics
+package lectures.part1basics
 
 object ValuesVariablesTypes extends App {
   // Val`s нельзя изменять (аля константа)
@@ -42,7 +42,7 @@ object ValuesVariablesTypes extends App {
   // Предпочтительней использовать val, так что если есть возможность
   // не использовать var, то лучше использовать val
 
-  val first, second :String = "Test"
+  val first, second: String = "Test"
   println(first + second)
 
   var test = "Test".intersect("test")
