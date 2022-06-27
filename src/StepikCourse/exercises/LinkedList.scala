@@ -13,11 +13,11 @@ abstract class LogList{
 }
 
 class Log(head: String, tail: LogList) extends LogList{
-  override def last: String = ???
+  override def last: String = head
 
-  override def previous: LogList = ???
+  override def previous: LogList = tail
 
-  override def isEmpty: Boolean = ???
+  override def isEmpty: Boolean = false
 
   override def all: String = ???
 
@@ -25,13 +25,13 @@ class Log(head: String, tail: LogList) extends LogList{
 }
 
 object Empty extends LogList {
-  override def last: String = ???
+  override def last: String = throw new NoSuchElementException
 
-  override def previous: LogList = ???
+  override def previous: LogList = throw new NoSuchElementException
 
-  override def isEmpty: Boolean = ???
+  override def isEmpty: Boolean = true
 
-  override def all: String = ???
+  override def all: String = null
 
   override def add(msg: String): LogList = new Log(msg, Empty)
 }
